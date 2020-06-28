@@ -1,0 +1,7 @@
+; npm config edit -g
+
+init-author-email=eelsweb@gmail.com
+init-author-name=sarincasm
+init-author-url=http://sarincasm.com
+init-license=UNLICENSED
+init-version=0.2.0
