@@ -10,9 +10,11 @@ module.exports = {
 	extends: [
 		'eslint:recommended',
 		'plugin:react/recommended',
+		'plugin:jest/recommended',
 		'eslint-config-prettier',
 	],
 	parserOptions: {
+		sourceType: 'module',
 		ecmaFeatures: {
 			jsx: true,
 		},
