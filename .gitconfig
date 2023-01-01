@@ -1,0 +1,4 @@
+[includeIf "gitdir:~/Documents/N/"]
+  path = ~/.gitconfig-eels
+[includeIf "gitdir:~/Documents/CapJ/"]
+  path = ~/.gitconfig-capj
