@@ -8,8 +8,12 @@ module.exports = {
 	defaultBrowser: 'Safari',
 	handlers: [
 		{
-			match: /^https?:\/\/google\.com\/.*$/,
-			browser: 'Safari',
+			// https://www.icloud.com/shortcuts/a466e6ecc5d44d8189e5b6e597f42d56
+			match: /^https?:\/\/www\.google\.com\/.*$/,
+			browser: {
+				name: 'Brave Browser',
+				profile: 'Profile 3',
+			},
 		},
 		{
 			match: /^https?:\/\/.*\.youtube\.com\/.*$/,
