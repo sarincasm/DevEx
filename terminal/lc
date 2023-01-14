@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+# fuzzy search directory
+session=$(find ~ ~/Documents/N/Eels/Repos ~/Documents/N/Eels/jar-of-dirt  ~/Documents/CapJ/Repos -mindepth 0 -maxdepth 1 -type d | fzf) 
+
+# derive session name
+if [ "$session" == "$HOME" ]
+then
+  session_name="HOME"
+else
+  session_name=$(basename "$session" | tr . _)  
+fi
+
+# upsert tmux session
+if ! tmux has-session -t "$session_name" 2> /dev/null
+then
+  tmux new -s "$session_name" -c "$session" -d
+fi
+
+# switch to that session
+tmux switch-client -t "$session_name"
