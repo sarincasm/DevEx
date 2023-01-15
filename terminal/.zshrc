@@ -10,7 +10,7 @@ PROMPT='😈😇%2~%#'
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 #tmux
-alias lc="~/Documents/N/Eels/Repos/config/terminal/lc"
+alias lc="~/Documents/N/Eels/Repos/DevEx/terminal/lc"
 
 # cd using fzf
 alias sd="cd \$(find ~/Documents/N ~/Documents/CapJ -not -path '*/.*' -maxdepth 3 -type d | fzf)"
@@ -26,6 +26,9 @@ bindkey '^[[A' fzf-history-widget
 
 # autosuggestions
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# thefuck
+eval $(thefuck --alias)
 
 # launch tmux
 if [ -z "$TMUX" ]

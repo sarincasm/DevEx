@@ -7,7 +7,7 @@ XXXXXXXXXX
 ## Install terminal tools
 
 ```
-brew install tmux fzf zsh-autosuggestions
+brew install tmux fzf zsh-autosuggestions thefuck
 ```
 
 ## Symlink dot Files
@@ -45,4 +45,12 @@ brew install fzf
 
 ```
 brew install zsh-autosuggestions
+```
+
+## [thefuck](https://github.com/nvbn/thefuck)
+
+[Installation](https://github.com/nvbn/thefuck#installation)
+
+```
+brew install thefuck
 ```
