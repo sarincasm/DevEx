@@ -7,7 +7,7 @@ XXXXXXXXXX
 ## Install terminal tools
 
 ```
-brew install tmux fzf zsh-autosuggestions thefuck
+brew install tmux fzf zsh-autosuggestions thefuck direnv
 ```
 
 ## Symlink dot Files
@@ -53,4 +53,12 @@ brew install zsh-autosuggestions
 
 ```
 brew install thefuck
+```
+
+## [direnv](https://github.com/direnv/direnv)
+
+[Installation](https://github.com/direnv/direnv/blob/master/docs/installation.md)
+
+```
+brew install direnv
 ```

@@ -30,6 +30,9 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # thefuck
 eval $(thefuck --alias)
 
+# direnv
+eval "$(direnv hook zsh)"
+
 # launch tmux
 if [ -z "$TMUX" ]
 then
