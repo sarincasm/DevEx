@@ -11,7 +11,11 @@ https://brew.sh
 ## Install terminal tools
 
 ```
-brew install tmux fzf zsh-autosuggestions thefuck direnv
+brew install tmux fzf zsh-autosuggestions thefuck bitwarden-cli direnv
+```
+
+```
+brew install --cask finicky visual-studio-code thunderbird
 ```
 
 ## Symlink dot Files
@@ -23,6 +27,12 @@ ln -s $PWD/.gitconfig-capj $HOME/.gitconfig-capj && \
 ln -s $PWD/.gitconfig-eels $HOME/.gitconfig-eels && \
 ln -s $PWD/terminal/.tmux.conf $HOME/.tmux.conf && \
 ln -s $PWD/terminal/.zshrc $HOME/.zshrc
+```
+
+## Brew Caveats
+
+```
+/opt/homebrew/opt/fzf/install
 ```
 
 # Individual Tools
