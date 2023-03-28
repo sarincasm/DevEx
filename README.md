@@ -4,6 +4,10 @@ XXXXXXXXXX
 
 # Quick Start
 
+## Install Homebrew
+
+https://brew.sh
+
 ## Install terminal tools
 
 ```
