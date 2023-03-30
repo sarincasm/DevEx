@@ -11,11 +11,11 @@ https://brew.sh
 ## Install terminal tools
 
 ```
-brew install tmux fzf zsh-autosuggestions thefuck bitwarden-cli direnv
+brew install tmux fzf zsh-autosuggestions thefuck bitwarden-cli direnv MonitorControl
 ```
 
 ```
-brew install --cask finicky visual-studio-code thunderbird
+brew install --cask finicky visual-studio-code postman lulu dozer brave-browser obsidian todoist megasync notion standard-notes thunderbird raycast firefox microsoft-edge surfshark bitwarden google-chrome spotify raindropio
 ```
 
 ## Symlink dot Files
@@ -33,46 +33,4 @@ ln -s $PWD/terminal/.zshrc $HOME/.zshrc
 
 ```
 /opt/homebrew/opt/fzf/install
-```
-
-# Individual Tools
-
-## [tmux](https://github.com/tmux/tmux)
-
-[Installation](https://github.com/tmux/tmux/wiki/Installing)
-
-```
-brew install tmux
-```
-
-## [fzf](https://github.com/junegunn/fzf)
-
-[Installation](https://github.com/junegunn/fzf#installation)
-
-```
-brew install fzf
-```
-
-## [autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
-
-[Installation](https://formulae.brew.sh/formula/zsh-autosuggestions)
-
-```
-brew install zsh-autosuggestions
-```
-
-## [thefuck](https://github.com/nvbn/thefuck)
-
-[Installation](https://github.com/nvbn/thefuck#installation)
-
-```
-brew install thefuck
-```
-
-## [direnv](https://github.com/direnv/direnv)
-
-[Installation](https://github.com/direnv/direnv/blob/master/docs/installation.md)
-
-```
-brew install direnv
 ```
