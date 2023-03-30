@@ -8,7 +8,7 @@ XXXXXXXXXX
 
 https://brew.sh
 
-## Install terminal tools
+## Install Software and Tools
 
 ```
 brew install tmux fzf zsh-autosuggestions thefuck bitwarden-cli direnv MonitorControl
