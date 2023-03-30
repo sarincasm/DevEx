@@ -15,7 +15,7 @@ brew install tmux fzf zsh-autosuggestions thefuck bitwarden-cli direnv MonitorCo
 ```
 
 ```
-brew install --cask finicky visual-studio-code postman lulu dozer brave-browser obsidian todoist megasync notion standard-notes thunderbird raycast firefox microsoft-edge surfshark bitwarden google-chrome spotify raindropio
+brew install --cask finicky visual-studio-code postman lulu dozer brave-browser obsidian todoist megasync notion standard-notes thunderbird raycast firefox microsoft-edge surfshark bitwarden google-chrome spotify raindropio docker
 ```
 
 ## Symlink dot Files
