@@ -11,7 +11,7 @@ https://brew.sh
 ## Install Software and Tools
 
 ```
-brew install tmux fzf zsh-autosuggestions thefuck bitwarden-cli direnv MonitorControl
+brew install tmux fzf zsh-autosuggestions thefuck bitwarden-cli direnv MonitorControl kubectl
 ```
 
 ```
@@ -26,7 +26,8 @@ ln -s $PWD/.gitconfig $HOME/.gitconfig && \
 ln -s $PWD/.gitconfig-capj $HOME/.gitconfig-capj && \
 ln -s $PWD/.gitconfig-eels $HOME/.gitconfig-eels && \
 ln -s $PWD/terminal/.tmux.conf $HOME/.tmux.conf && \
-ln -s $PWD/terminal/.zshrc $HOME/.zshrc
+ln -s $PWD/terminal/.zshrc $HOME/.zshrc && \
+ln -s $PWD/.npmrc $HOME/.npmrc
 ```
 
 ## Brew Caveats
