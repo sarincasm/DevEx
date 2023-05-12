@@ -11,11 +11,11 @@ https://brew.sh
 ## Install Software and Tools
 
 ```
-brew install tmux fzf zsh-autosuggestions thefuck bitwarden-cli direnv MonitorControl kubectl
+brew install bitwarden-cli fzf go kubectl MonitorControl thefuck tmux zsh-autosuggestions
 ```
 
 ```
-brew install --cask finicky visual-studio-code postman lulu dozer brave-browser obsidian todoist megasync notion standard-notes thunderbird raycast firefox microsoft-edge surfshark bitwarden google-chrome spotify raindropio docker
+brew install --cask adobe-creative-cloud arc bitwarden brave-browser docker dozer firefox finicky google-chrome lulu megasync microsoft-edge notion obsidian postico postman raindropio raycast spotify standard-notes surfshark thunderbird todoist visual-studio-code
 ```
 
 ## Symlink dot Files

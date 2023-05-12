@@ -25,33 +25,32 @@ module.exports = {
 		{
 			match: /^https?:\/\/github\.com\/.*$/,
 			browser: {
-				name: 'Brave Browser',
-				profile: 'Default',
+				name: 'Arc',
 			},
 		},
 		{
 			match: /^https?:\/\/mail\.google\.com\/.*$/,
-			browser: 'Firefox',
+			browser: 'Arc',
 		},
 		{
 			match: /^https?:\/\/drive\.google\.com\/.*$/,
-			browser: 'Firefox',
+			browser: 'Arc',
 		},
 		{
 			match: /^https?:\/\/docs\.google\.com\/.*$/,
-			browser: 'Firefox',
+			browser: 'Arc',
 		},
 		{
 			match: /^https?:\/\/onefootball\.atlassian\.net\/.*$/,
-			browser: 'Firefox',
+			browser: 'Arc',
 		},
 		{
 			match: /^https?:\/\/.*\.onefootball\.com\/.*$/,
-			browser: 'Firefox',
+			browser: 'Arc',
 		},
 		{
 			match: /^https?:\/\/.*\.jumpcloud\.com\/.*$/,
-			browser: 'Firefox',
+			browser: 'Arc',
 		},
 	],
 }
