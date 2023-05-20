@@ -23,6 +23,12 @@ module.exports = {
 			},
 		},
 		{
+			match: /^https?:\/\/duckduckgo\.com\/.*$/,
+			browser: {
+				name: 'Arc',
+			},
+		},
+		{
 			match: /^https?:\/\/github\.com\/.*$/,
 			browser: {
 				name: 'Arc',
