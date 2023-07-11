@@ -29,7 +29,8 @@ ln -s $PWD/terminal/.tmux.conf $HOME/.tmux.conf && \
 ln -s $PWD/terminal/.zshrc $HOME/.zshrc && \
 ln -s $PWD/.npmrc $HOME/.npmrc && \
 ln -s $PWD/.prettierrc $HOME/Documents/N/Eels/.prettierrc && \
-ln -s $PWD/.prettierignore $HOME/Documents/N/Eels/.prettierignore
+ln -s $PWD/.prettierignore $HOME/Documents/N/Eels/.prettierignore && \
+ln -s $PWD/.npmrc /opt/homebrew/etc/npmrc
 ```
 
 ## Brew Caveats
