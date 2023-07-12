@@ -11,12 +11,11 @@ https://brew.sh
 ## Install Software and Tools
 
 ```
-brew install bitwarden-cli fzf go kubectl MonitorControl thefuck tmux zsh-autosuggestions
+brew bundle
 ```
 
-```
-brew install --cask adobe-creative-cloud arc bitwarden brave-browser docker dozer firefox finicky google-chrome lulu megasync microsoft-edge notion obsidian postico postman raindropio raycast spotify standard-notes surfshark thunderbird todoist visual-studio-code
-```
+Uses `Brewfile` to install all software and tools.
+[Read more about Brew Bundle](https://github.com/homebrew/homebrew-bundle)
 
 ## Symlink dot Files
 
