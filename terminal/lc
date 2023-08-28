@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # fuzzy search directory
-session=$(find ~ ~/Documents/N/Eels/Repos ~/Documents/N/Eels/jar-of-dirt  ~/Documents/CapJ/Repos -mindepth 0 -maxdepth 1 -type d | fzf) 
+session=$(find ~ ~/Documents/N/Eels/Repos ~/Documents/N/Eels/jar-of-dirt  ~/Documents/CapJ/CapJRepos -mindepth 0 -maxdepth 1 -type d | fzf) 
 
 # derive session name
 if [ "$session" == "$HOME" ]

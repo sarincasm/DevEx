@@ -2,3 +2,5 @@
   path = ~/.gitconfig-eels
 [includeIf "gitdir:~/Documents/CapJ/"]
   path = ~/.gitconfig-capj
+[http]
+	postBuffer = 157286400
