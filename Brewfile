@@ -36,6 +36,7 @@ cask "standard-notes"
 cask "surfshark"
 cask "thunderbird"
 cask "todoist"
+cask "veracrypt"
 cask "visual-studio-code"
 
 mas "ScreenBrush", id: 1233965871
