@@ -1,5 +1,6 @@
 brew "bitwarden-cli"
 brew "fzf"
+brew "gh"
 brew "go"
 brew "kubectl"
 brew "mas"
