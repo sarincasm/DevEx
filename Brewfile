@@ -38,5 +38,6 @@ cask "thunderbird"
 cask "todoist"
 cask "veracrypt"
 cask "visual-studio-code"
+cask "vlc"
 
 mas "ScreenBrush", id: 1233965871
