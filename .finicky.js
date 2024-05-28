@@ -12,7 +12,7 @@ module.exports = {
 			match: /^https?:\/\/www\.google\.com\/.*$/,
 			browser: {
 				name: 'Brave Browser',
-				profile: 'Profile 3',
+				profile: 'Profile 4',
 			},
 		},
 		{
@@ -25,38 +25,65 @@ module.exports = {
 		{
 			match: /^https?:\/\/duckduckgo\.com\/.*$/,
 			browser: {
-				name: 'Arc',
+				name: 'Brave Browser',
+				profile: 'Profile 4',
+			},
+		},
+		{
+			match: /motain/,
+			browser: {
+				name: 'Brave Browser',
+				profile: 'Profile 1',
 			},
 		},
 		{
 			match: /^https?:\/\/github\.com\/.*$/,
 			browser: {
-				name: 'Arc',
+				name: 'Brave Browser',
+				profile: 'Profile 2',
 			},
 		},
 		{
 			match: /^https?:\/\/mail\.google\.com\/.*$/,
-			browser: 'Arc',
+			browser: {
+				name: 'Brave Browser',
+				profile: 'Profile 1',
+			},
 		},
 		{
 			match: /^https?:\/\/drive\.google\.com\/.*$/,
-			browser: 'Arc',
+			browser: {
+				name: 'Brave Browser',
+				profile: 'Profile 1',
+			},
 		},
 		{
 			match: /^https?:\/\/docs\.google\.com\/.*$/,
-			browser: 'Arc',
+			browser: {
+				name: 'Brave Browser',
+				profile: 'Profile 1',
+			},
 		},
 		{
 			match: /^https?:\/\/onefootball\.atlassian\.net\/.*$/,
-			browser: 'Arc',
+			browser: {
+				name: 'Brave Browser',
+				profile: 'Profile 1',
+			},
 		},
 		{
-			match: /^https?:\/\/.*\.onefootball\.com\/.*$/,
-			browser: 'Arc',
+			match: /onefootball/,
+			browser: {
+				name: 'Brave Browser',
+				profile: 'Profile 1',
+			},
 		},
 		{
 			match: /^https?:\/\/.*\.jumpcloud\.com\/.*$/,
-			browser: 'Arc',
+			browser: {
+				name: 'Brave Browser',
+				profile: 'Profile 1',
+			},
 		},
 	],
 }
