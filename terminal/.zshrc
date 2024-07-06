@@ -36,7 +36,7 @@ then
   tmux attach -t "HOME" || tmux new -s "HOME"  
 fi
 
-init_mamba() {
+mamba_init() {
   # >>> conda initialize >>>
   # !! Contents within this block are managed by 'conda init' !!
   __conda_setup="$('/opt/homebrew/Caskroom/miniforge/base/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"

@@ -85,5 +85,12 @@ module.exports = {
 				profile: 'Profile 1',
 			},
 		},
+		{
+			match: /^https?:\/\/.*\eu.mixpanel\.com\/.*$/,
+			browser: {
+				name: 'Brave Browser',
+				profile: 'Profile 1',
+			},
+		},
 	],
 }
