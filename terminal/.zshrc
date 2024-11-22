@@ -60,3 +60,5 @@ alias mamel="mamba env list"
 mamact() {
   mamba activate $1
 }
+
+alias poetry="~/Library/Application\ Support/pypoetry/venv/bin/poetry"

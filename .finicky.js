@@ -23,6 +23,13 @@ module.exports = {
 			},
 		},
 		{
+			match: /^https?:\/\/youtu\.be\/.*$/,
+			browser: {
+				name: 'Brave Browser',
+				profile: 'Profile 3',
+			},
+		},
+		{
 			match: /^https?:\/\/duckduckgo\.com\/.*$/,
 			browser: {
 				name: 'Brave Browser',
