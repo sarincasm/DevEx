@@ -67,5 +67,12 @@ export default {
 				profile: 'eels',
 			},
 		},
+		{
+			match: /^https?:\/\/www\.amazon\.de\/.*$/,
+			browser: {
+				name: 'Comet',
+				profile: 'Drop',
+			},
+		},
 	],
 }
