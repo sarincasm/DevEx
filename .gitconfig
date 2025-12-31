@@ -4,3 +4,12 @@
   path = ~/.gitconfig-capj
 [http]
 	postBuffer = 157286400
+[user]
+  # Tell git which key to use
+	signingkey = EA959708
+[commit]
+  # Tell git to sign all commits by default
+	gpgsign = true
+[gpg]
+  # Tell git where to find gpg
+	program = /usr/local/bin/gpg
