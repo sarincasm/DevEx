@@ -10,6 +10,32 @@ export default {
 		profile: 'eels',
 	},
 	// defaultBrowser: 'Safari',
+	rewrite: [
+		{
+			match: () => true,
+			url: (url) => {
+				const trackingParamsToRemove = [
+					'utm_source',
+					'utm_medium',
+					'utm_campaign',
+					'utm_term',
+					'utm_content',
+					'fbclid',
+					'gclid',
+					'ref',
+					'source',
+					'si',
+					'igshid',
+				]
+
+				trackingParamsToRemove.forEach((param) =>
+					url.searchParams.delete(param)
+				)
+
+				return url
+			},
+		},
+	],
 	handlers: [
 		{
 			match: /^https?:\/\/google\.com\/.*$/,
@@ -61,6 +87,13 @@ export default {
 			},
 		},
 		{
+			match: /^https?:\/\/.*\.spendesk\.com\/.*$/,
+			browser: {
+				name: 'Comet',
+				profile: 'kertos',
+			},
+		},
+		{
 			match: /^https?:\/\/github\.com\/.*$/,
 			browser: {
 				name: 'Comet',
@@ -69,6 +102,20 @@ export default {
 		},
 		{
 			match: /^https?:\/\/www\.amazon\.de\/.*$/,
+			browser: {
+				name: 'Comet',
+				profile: 'Drop',
+			},
+		},
+		{
+			match: /^https?:\/\/www\.swk\.de\/.*$/,
+			browser: {
+				name: 'Comet',
+				profile: 'Drop',
+			},
+		},
+		{
+			match: /^https?:\/\/my\.dpd\.de\/.*$/,
 			browser: {
 				name: 'Comet',
 				profile: 'Drop',

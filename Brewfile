@@ -1,5 +1,6 @@
 brew "bitwarden-cli"
 brew "gh"
+brew "uv"
 # brew "kubectl"
 # brew "mas"
 # brew "MonitorControl" --> cask "monitorcontrol"
