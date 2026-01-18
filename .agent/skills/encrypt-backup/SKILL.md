@@ -29,9 +29,11 @@ Encrypts a folder using GPG and removes the unencrypted original.
    ```
    Note: `--batch` is required for non-interactive environments (no TTY).
 5. Verify the encrypted file was created successfully
-6. Remove the contents but keep the empty folder and `.gitkeep`:
+6. Warn if the folder is not gitignored:
    ```bash
-   find <folder> -mindepth 1 ! -name '.gitkeep' -delete
+   if ! git check-ignore -q <folder>; then
+     echo "Warning: <folder> is not gitignored."
+   fi
    ```
 7. Confirm completion to user
 

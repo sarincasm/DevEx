@@ -55,3 +55,14 @@ gpg -d encrypted/<folder>.tar.gz.gpg | tar xzf -
 mkdir -p encrypted
 tar czf - <folder> | gpg -e -r "sarincasm" -o encrypted/<folder>.tar.gz.gpg
 ```
+
+## Raycast Scripts
+
+The `raycast/` folder is local-only and gitignored. Restore it by decrypting:
+
+```bash
+gpg -d encrypted/raycast.tar.gz.gpg | tar xzf -
+```
+
+Then import Raycast settings. The Script Commands path should restore automatically as long as
+the repo lives at the same location.

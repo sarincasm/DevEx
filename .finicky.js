@@ -94,6 +94,20 @@ export default {
 			},
 		},
 		{
+			match: /^https?:\/\/oidc\.eu-central-1\.amazonaws\.com\/.*$/,
+			browser: {
+				name: 'Comet',
+				profile: 'kertos',
+			},
+		},
+		{
+			match: /^https?:\/\/.*\.leapsome\.com\/.*$/,
+			browser: {
+				name: 'Comet',
+				profile: 'kertos',
+			},
+		},
+		{
 			match: /^https?:\/\/github\.com\/.*$/,
 			browser: {
 				name: 'Comet',

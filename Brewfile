@@ -1,4 +1,5 @@
 brew "bitwarden-cli"
+brew "displayplacer"
 brew "gh"
 brew "uv"
 # brew "kubectl"
