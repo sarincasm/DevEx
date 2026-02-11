@@ -30,7 +30,11 @@ ln -s $PWD/.npmrc $HOME/.npmrc && \
 ln -s $PWD/.prettierrc $HOME/Documents/N/Eels/.prettierrc && \
 ln -s $PWD/.prettierignore $HOME/Documents/N/Eels/.prettierignore && \
 ln -s $PWD/.npmrc /opt/homebrew/etc/npmrc && \
-ln -s $PWD/.agent/skills $PWD/.claude/skills
+ln -s $PWD/.agents/skills $HOME/.cursor/skills && \
+ln -s $PWD/.agents/skills $HOME/.codex/skills && \
+ln -s $PWD/.agents/skills $HOME/.claude/skills && \
+ln -s $PWD/.agents/skills $HOME/.gemini/skills && \
+ln -s $PWD/.agents/skills $HOME/.gemini/antigravity/global_skills
 ```
 
 ## Brew Caveats

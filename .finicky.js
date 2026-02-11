@@ -5,9 +5,24 @@
  */
 
 export default {
-	defaultBrowser: {
-		name: 'Comet',
-		profile: 'eels',
+	defaultBrowser: () => {
+		const keys = finicky.getModifierKeys()
+
+		if (keys?.option) {
+			return {
+				name: 'Comet',
+				profile: 'Drop',
+			}
+		}
+
+		if (keys?.control) {
+			return 'Safari'
+		}
+
+		return {
+			name: 'Comet',
+			profile: 'eels',
+		}
 	},
 	// defaultBrowser: 'Safari',
 	rewrite: [
@@ -102,6 +117,13 @@ export default {
 		},
 		{
 			match: /^https?:\/\/.*\.leapsome\.com\/.*$/,
+			browser: {
+				name: 'Comet',
+				profile: 'kertos',
+			},
+		},
+		{
+			match: /^https?:\/\/app\.datadoghq\.eu\/.*$/,
 			browser: {
 				name: 'Comet',
 				profile: 'kertos',
