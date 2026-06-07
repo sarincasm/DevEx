@@ -30,12 +30,36 @@ ln -s $PWD/.npmrc $HOME/.npmrc && \
 ln -s $PWD/.prettierrc $HOME/Documents/N/Eels/.prettierrc && \
 ln -s $PWD/.prettierignore $HOME/Documents/N/Eels/.prettierignore && \
 ln -s $PWD/.npmrc /opt/homebrew/etc/npmrc && \
-ln -s $PWD/.agents/skills $HOME/.cursor/skills && \
-ln -s $PWD/.agents/skills $HOME/.codex/skills && \
-ln -s $PWD/.agents/skills $HOME/.claude/skills && \
-ln -s $PWD/.agents/skills $HOME/.gemini/skills && \
-ln -s $PWD/.agents/skills $HOME/.gemini/antigravity/global_skills
+git config core.hooksPath scripts/hooks
 ```
+
+## Agent Skills
+
+Run once to link local skills into all agent skill directories:
+
+```bash
+scripts/skills-sync.sh
+```
+
+After that, the `post-commit` hook keeps skills in sync automatically on every commit.
+
+### Global Skills
+
+Installed via npx, not tracked in this repo:
+
+```bash
+npx skills add agent-browser chrome-cdp dogfood slack vercel-react-best-practices
+```
+
+### Local Skills
+
+Custom skills are in `.agents/skills/` and tracked in this repo:
+
+- `assess-then-change`
+- `commit-message`
+- `dep-update`
+- `encrypt-backup`
+- `macos-calendar`
 
 ## Brew Caveats
 

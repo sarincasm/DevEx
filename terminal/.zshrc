@@ -1,3 +1,6 @@
+export DEVEX_DIR="$HOME/Documents/N/Eels/repos/DevEx"
+skills-sync() { bash "$DEVEX_DIR/scripts/skills-sync.sh"; }
+
 #cd aliases
 alias cdeels="cd ~/Documents/N/Eels/"
 alias cdworkrepo="cd ~/Documents/CapJ/CapJRepos"
@@ -21,5 +24,16 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH="$HOME/.local/bin:$PATH"
 
-# Added by Antigravity
-export PATH="/Users/gauraang/.antigravity/antigravity/bin:$PATH"
+# Entire CLI shell completion
+autoload -Uz compinit && compinit && source <(entire completion zsh)
+
+# Added by Antigravity IDE
+export PATH="/Users/gauraang/.antigravity-ide/antigravity-ide/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/Users/gauraang/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
