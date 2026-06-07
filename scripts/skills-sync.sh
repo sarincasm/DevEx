@@ -3,7 +3,9 @@ set -euo pipefail
 
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 SKILLS_SRC="$REPO_DIR/.agents/skills"
+CONTEXT_SRC="$REPO_DIR/.agents/context"
 
+# --- Skills ---
 SKILL_DIRS=(
   "$HOME/.claude/skills"
   "$HOME/.cursor/skills"
@@ -27,3 +29,24 @@ for skill_dir in "${SKILL_DIRS[@]}"; do
 done
 
 echo "Skills synced."
+
+# --- Context files ---
+# Each entry is "src_relative_to_context_dir:dest_absolute".
+# Cursor global rules are UI-only (Settings > Rules); no local file to sync.
+CONTEXT_LINKS=(
+  "global.md:$HOME/.claude/CLAUDE.md"
+  "global.md:$HOME/.gemini/GEMINI.md"
+)
+
+for entry in "${CONTEXT_LINKS[@]}"; do
+  src="$CONTEXT_SRC/${entry%%:*}"
+  dest="${entry##*:}"
+  mkdir -p "$(dirname "$dest")"
+  if [[ -f "$dest" && ! -L "$dest" ]]; then
+    echo "Backing up existing $(basename "$dest") → ${dest}.bak"
+    mv "$dest" "${dest}.bak"
+  fi
+  ln -sfn "$src" "$dest"
+done
+
+echo "Context files synced."
